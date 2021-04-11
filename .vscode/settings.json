@@ -1,0 +1,17 @@
+{
+  "importSorter.generalConfiguration.sortOnBeforeSave": true,
+  "importSorter.sortConfiguration.customOrderingRules.rules": [
+      {
+          "orderLevel": 11,
+          "regex": "^[a-z@][a-z]"
+      },
+      {
+          "orderLevel": 21,
+          "regex": "^@/"
+      },
+      {
+          "orderLevel": 31,
+          "regex": "^\\."
+      }
+  ]
+}
