@@ -1,34 +1,35 @@
 module.exports = {
-  siteMetadata: {
-    title: `For, Record.`,
-    description: ``,
-    author: `@seonggwonyoon`,
-  },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-image',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/assets`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/assets/gatsby-icon.png',
       },
     },
-    `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-styled-components`,
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-typescript-checker',
   ],
-}
+  siteMetadata: {
+    title: 'For, Record.',
+    description: '',
+    author: '@seonggwonyoon',
+  },
+};
